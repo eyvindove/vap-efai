@@ -13,8 +13,15 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/user',
-    name: 'UserPage',
-    component: () => import('@/views/UserPage.vue'),
+    name: 'ContentPage',
+    component: () => import('@/layouts/ContentLayout.vue'),
+    children: [
+      {
+        path: '/user',
+        name: 'UserPage',
+        component: () => import('@/views/UserPage.vue'),
+      },
+    ],
   },
 ]
 

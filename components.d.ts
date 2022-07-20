@@ -7,9 +7,25 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AppConfirmDialog: typeof import('./src/components/AppConfirmDialog.vue')['default']
+    AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElCard: typeof import('element-plus/es')['ElCard']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElDialog: typeof import('element-plus/es')['ElDialog']
+    ElForm: typeof import('element-plus/es')['ElForm']
+    ElFormItem: typeof import('element-plus/es')['ElFormItem']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElInput: typeof import('element-plus/es')['ElInput']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElPageHeader: typeof import('element-plus/es')['ElPageHeader']
+    ElSpace: typeof import('element-plus/es')['ElSpace']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UserDialog: typeof import('./src/components/UserDialog.vue')['default']
+    UserTable: typeof import('./src/components/UserTable.vue')['default']
   }
 }
